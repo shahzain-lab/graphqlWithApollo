@@ -44,7 +44,7 @@ const countries = [
     }   
 ]
 ///resolver
-const resolver = {
+const resolvers = {
     Query: {
         countries: () => countries
     }
@@ -63,3 +63,9 @@ type Query{
     countries: [Countries]
 }
 `
+///initailize
+const server = new ApolloServer({typeDefs , resolvers})
+
+server.listen().then(({url}) => {
+    console.log(`🚀  Server ready at ${url}`)
+})
