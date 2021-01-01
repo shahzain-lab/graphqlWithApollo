@@ -63,7 +63,7 @@ type Query{
     countries: [Countries]
 }
 `
-///initailize
+///initailize/
 const server = new ApolloServer({typeDefs , resolvers})
 
 server.listen().then(({url}) => {
