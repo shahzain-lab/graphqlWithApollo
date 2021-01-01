@@ -43,7 +43,13 @@ const countries = [
          "description": "Since China began reforming its economy in 1978, its GDP has had an average growth of almost 10 percent a year. Despite the fact that it is the world’s second-largest economy, China’s per capita income is relatively low compared to other high-income countries. "
     }   
 ]
-///
+///resolver
+const resolver = {
+    Query: {
+        countries: () => countries
+    }
+}
+
 const typeDefs=gql`
 type Countries{
     id: Int
