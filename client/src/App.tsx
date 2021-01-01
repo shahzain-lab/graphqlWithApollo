@@ -5,6 +5,11 @@ import './App.css';
 import {ApolloProvider} from '@apollo/client'
 //setup clints
 import {ApolloClient, InMemoryCache} from '@apollo/client';
+///components
+import { Countries } from './components/Countries';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+ 
 
 const client = new ApolloClient({
   uri: "http://localhost:4000/",
@@ -13,8 +18,10 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    <ApolloProvider>
-      
+    <ApolloProvider client={client}>
+      <Header />
+      <Countries />
+      <Footer />
     </ApolloProvider>
   );
 }
