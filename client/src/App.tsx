@@ -2,8 +2,9 @@ import React from 'react';
 ///css
 import './App.css';
 ////Apollo Provider
+import {ApolloProvider} from '@apollo/client'
 //setup clints
-import {ApolloClient, InMemoryCache} from '@apolloClient';
+import {ApolloClient, InMemoryCache} from '@apollo/client';
 
 const client = new ApolloClient({
   uri: "http://localhost:4000/",
@@ -12,8 +13,9 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    <>
-    </>
+    <ApolloProvider>
+      
+    </ApolloProvider>
   );
 }
 
