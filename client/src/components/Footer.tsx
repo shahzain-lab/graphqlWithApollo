@@ -8,7 +8,7 @@ export const Footer =()=> {
 
           
           <h3 className="footerhead">Developer: <span>@Shahzain</span></h3> 
-          <a href="www.github.com/shahzain-lab/apolloclient" className="github">Github code</a>
+          <a href="https://github.com/shahzain-lab/graphqlWithApollo" target="blank" className="github">Github code</a>
         
         </div>
     )
