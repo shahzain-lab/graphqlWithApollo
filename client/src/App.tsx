@@ -11,17 +11,18 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
  
 
-const client = new ApolloClient({
+const client= new ApolloClient({
   uri: "http://localhost:4000/",
   cache: new InMemoryCache(),
 })
+
 
 function App() {
   return (
     <ApolloProvider client={client}>
       <Header />
-      <Countries />
-      <Footer />
+        <Countries />
+        <Footer />
     </ApolloProvider>
   );
 }
