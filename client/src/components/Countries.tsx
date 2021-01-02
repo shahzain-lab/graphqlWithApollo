@@ -13,6 +13,7 @@ const COUNTRIES_DETAIL = gql`
           growth
           description
           image
+          wikipedia
       }
   }
 `
@@ -33,7 +34,7 @@ export const Countries =()=> {
            {
               countries.map((count:any) => (
                   <div key={count.id}>
-                      <h3 className="headthree">{count.country}</h3>
+                      <a href={count.wikipedia} target="blank"><h3 className="headthree">{count.country}</h3></a>
                       <div className="collection">
                       <img src={count.image} alt="" className="img"/>
                      <p>{count.description}</p>

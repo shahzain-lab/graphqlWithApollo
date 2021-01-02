@@ -50,6 +50,10 @@
   padding: 2rem 0;
   margin: 1rem 0;
   background-color: #b9b9b9;
+  transition: .2s;
+}
+.headthree:hover{
+  color: #f5c802;
 }
 .collection{
   width: 100vw;
